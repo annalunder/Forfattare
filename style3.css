@@ -1,0 +1,139 @@
+/*Sidans bakgrundsfärg*/
+body {
+	background-color: burlywood;
+}
+
+/* Bakgrundsfärg, bredd och marginaler sätts för hela containern. */
+#container {
+	width: 900px;
+	margin: 10px auto;
+	background-color: blanchedalmond;
+}
+
+/* Storleken på headern sätts nedan. Bordern anpassas så att den inte ska bli dubbelt så bred på vissa ställen. */
+header {
+	border: 2px solid black;
+	border-bottom: 1px solid black;
+	margin: 0px;
+	padding: 40px;
+}
+
+h1 {
+	float: left;
+	width: 650px;
+	position: relative;
+	font-family: sans-serif;
+	font-weight: bolder;
+	color: black;
+}
+
+h2 {
+	color: black;
+	font-family: sans-serif;
+}
+
+h3 {
+	font-family: sans-serif;
+}
+
+/* Högercentrering, färg, position, marginal för sidhuvudets högra del. */
+.sidhuvud p {
+	text-align: right;
+	margin: 0;
+	position: relative;
+	color: black;
+}
+
+/* Navigeringsmenyn med länkar */
+nav {
+	border: 1px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	position: relative;
+}
+
+/* Elementen i naven, inga list-punkter */
+nav ul {
+	width: 100%;
+	list-style-type: none;
+	margin-left: 20px;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* Horisontell lista */
+nav li {
+	float: left;
+	margin: 0;
+}
+
+/* Mellanrum sätts mellan länkarna */
+nav li a {
+	padding: 20px;
+}
+
+/* Nedanstående klass innehåller sidans huvudinnehåll. Minimihöjden, min-height
+gör att nyhetsbrevsrutan alltid hamnar inom main-content och inte nedanför.
+Bordern sätts till 1px respektive 2px så att det inte blir dubbelt på vissa ställen. */
+.main-content {
+	border: 1px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-left: 40px;
+	padding-top: 40px;
+	min-height: 210px;
+}
+
+/* Innehållet i main-content sätts till att använda 70% av containern så att de
+även nyhetsbrevet ska få plats. */
+.main-content p {
+	width: 70%;
+}
+.main-content h2 {
+	width: 70%;
+}
+.main-content h3 {
+	width: 70%;
+}
+
+/* Nyhetsbrevsrutan flyter till höger om main */
+#nyhetsbrev {
+	border: 1px solid black;
+	float: right;
+	width: 220px;
+	position: relative;
+	left: -20px;
+	top: 20px;
+	padding: 5px;
+	display: block;
+	height: 200px;
+	background-color: burlywood;
+	color: black;
+}
+
+/* Marginalerna på hela nyhetsbrevsrutan snyggas till */
+#nyhetsbrev input {
+	margin: 5px;
+	margin-left: auto;
+}
+#nyhetsbrev label {
+	margin: 5px;
+}
+.center {
+    text-align: center;
+}
+
+/* Footerns borders justeras så att det inte blir dubbelt (se ovan) */
+footer {
+	border: 2px solid black;
+	border-top: 1px solid black;
+	width: 896px;
+	position: relative;
+}
+
+/* Texten i footern centreras */
+footer p {
+	text-align: center;
+	color: black;
+}

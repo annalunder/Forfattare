@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Författare</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style3.css">    
+    </head>
+    <body>
+    <!--En div-container som innehåller header, nav, aside, main-content och footer. -->
+	<div id="container">
+
+        <!--I headern finns huvudrubriken och informationen i sidhuvudet. -->
+            <header>
+                <h2>Min Webbsida</h2>
+    
+          <!--Ett aside-element med en klass för sidhuvud för att kunna högerställa infon-->
+                <aside class="sidhuvud">
+                    <p>Inlämningsuppgift 5</p>
+                    <p>Anna Lunder</p>
+                    <p>an1680</p>
+                </aside>
+            </header>
+    
+        <!-- Navigeringsmenyn -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index3.html">Start</a>
+                    </li>
+                    <li>
+                        <a href="författare.html">Min författare</a>
+                    </li>
+                    <li>
+                        <a href="css.html">Om CSS</a>
+                    </li>
+                    <li>
+                        <a href="övrigt.html">Övrigt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        <!--Rutan för nyhetsbrev som är ett formulär i ett eget aside-element-->
+        <aside id="nyhetsbrev">
+            <h3>Nyhetsbrev</h3>
+            <form action="#" class="formular" method="get">
+                <label for="name">Namn:</label> <input id="name" name="name" placeholder="Namn här.." type="text"> <label for="mailadress">Epost:</label> <input id="mailadress" name="mailadress" placeholder="Epost här.." type="email"> <div class="center"><br><button name="button" type="submit">Skicka</button></div>
+            </form>
+        </aside>
+
+        <div class="main-content">  
+            <h2>Frida Skybäck</h2>
+            <!--Bakgrundstext om författaren-->
+            <p>Frida Skybäck började sin författarbana med att skriva historiska romaner men har på senare år övergått till att skriva
+            romaner som utspelar sig både i nutid och dåtid. Skybäck skrev feelgoodromanen Bokhandeln på Riverside Drive efter att själv
+            ha bott en period i London. Läs mer på <a href="http://www.fridaskyback.se">Frida Skybäcks hemsida</a></p>
+            <h3><em>Mina favoritböcker</em></h3>
+            <p>Bokhandeln på Riverside Drive<br>Bokcirkeln vid världens ände<br>Bokskåpets hemligheter</p>
+            <h3><em>Historiska romaner</em></h3>
+            <p>Charlotte Hassel<br>Den vita frun<br>Norrsken<br>Polarnatt</p>
+        </div>
+
+        <!--I footern finns information om när sidan senast uppdaterades-->
+		<footer>
+			<p>Senast uppdaterad 2022-03-30</p>
+		</footer>
+    </div>
+    </body>
+</html>

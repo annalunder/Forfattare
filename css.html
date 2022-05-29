@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style3.css">
+    </head>
+    <body>
+        <!--En div-container för att kunna ringa in hela innehållet under en specifik bredd med ramar.-->
+	<div id="container">
+
+        <!--Under headern återfinns huvudrubriken samt sidhuvudsinformationen-->
+            <header>
+                <h2>Min Webbsida</h2>
+    
+          <!--Ett aside-element med en egen klass för sidhuvud för att kunna högerställa den informationen-->
+                <aside class="sidhuvud">
+                    <p>Inlämningsuppgift 5</p>
+                    <p>Anna Lunder</p>
+                    <p>an1680</p>
+                </aside>
+            </header>
+    
+        <!--Här finns sidans meny i form av en lista-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index3.html">Start</a>
+                    </li>
+                    <li>
+                        <a href="författare.html">Min författare</a>
+                    </li>
+                    <li>
+                        <a href="css.html">Om CSS</a>
+                    </li>
+                    <li>
+                        <a href="övrigt.html">Övrigt</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        <!--Rutan för nyhetsbrev som är ett formulär i ett eget aside-element-->
+            <aside id="nyhetsbrev">
+                <h3>Nyhetsbrev</h3>
+                <form action="#" class="formular" method="get">
+                    <label for="name">Namn:</label> <input id="name" name="name" placeholder="Namn här.." type="text"> <label for="mailadress">Epost:</label> <input id="mailadress" name="mailadress" placeholder="Epost här.." type="email"> <div class="center"><br><button name="button" type="submit">Skicka</button></div>
+                </form>
+            </aside>
+    
+        <!--En div: "main-content". Här finns sidans huvudsakliga innehåll, rubriker och stycken/paragrafer.-->
+            <div class="main-content">
+                <h2>External, internal och inline CSS</h2>
+                <p>Det finns tre olika sätt att addera sin CSS på. Inline innebär att man stylar ett eller flera separata element direkt i koden. Internal CSS innebär att man stylar en separat html-sida genom att addera en style-tagg i headen. I style-taggen lägger man alla de css-regler man vill applicera på den aktuella html-sidan. Det tredje sättet är att använda sig av externa stillmallar med CSS. Med en eller flera externa stilmallar kan man på ett enkelt sätt återanvända samma CSS upprepade gånger. Det blir också betydligt enklare att läsa koden på respektive html-sida när sidan inte innehåller både Html och CSS om vartannat.</p>
+                <p>Om man i stället har färre CSS-regler och ifall de är specifika för enbart en sida är det enklare att ha sin CSS samlad på den aktuella sidan. Jag ser inte många fördelar med att använda sig av inline CSS förutom när man har väldigt få element som ska stylas. I så fall är det enkelt och överskådligt att kunna se en koppling mellan attributet och dess formatering. Vanligtvis har man dock många html-sidor på en webbplats och då blir det oerhört praktiskt att ha externa stilmallar.</p>
+            </div>
+    
+        <!--I footern finns information om när sidan senast är uppdaterad-->
+            <footer>
+                <p>Senast uppdaterad 2022-03-30</p>
+            </footer>
+        </div>
+    </body>
+</html>
